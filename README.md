@@ -64,6 +64,20 @@ python -m pip install -r requirements.txt
 
 ## Phase 3 execution
 
+### One-command V3 demo
+
+Run the downloader, Agents 1-7, and the frontend/backend dashboard in order:
+
+```bat
+v3demo.bat
+```
+
+For a rerun using existing BRSR files:
+
+```bat
+v3demo.bat --skip-download
+```
+
 ### 1. Check the 20-company configuration
 
 ```bat
