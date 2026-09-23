@@ -67,6 +67,7 @@ OUTPUT_DIR.mkdir(
 )
 
 AUDIT_LOG = OUTPUT_DIR / "brsr_download_log.csv"
+TIMING_LOG = OUTPUT_DIR / "brsr_download_timing.csv"
 
 MAX_ATTEMPTS = 3
 
@@ -142,6 +143,33 @@ def ensure_audit_log():
         )
 
         writer.writeheader()
+
+
+def ensure_timing_log():
+    if TIMING_LOG.exists():
+        return
+
+    with TIMING_LOG.open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["scope", "company_code", "company_name", "seconds"],
+        )
+        writer.writeheader()
+
+
+def write_timing(scope: str, company_code: str, company_name: str, seconds: float):
+    ensure_timing_log()
+    with TIMING_LOG.open("a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=["scope", "company_code", "company_name", "seconds"],
+        )
+        writer.writerow({
+            "scope": scope,
+            "company_code": company_code,
+            "company_name": company_name,
+            "seconds": f"{seconds:.3f}",
+        })
 
 
 def sha256_file(path: Path) -> str:
@@ -1464,10 +1492,14 @@ def main():
     skipped = 0
     pending = 0
     failed = 0
+    overall_start = time.perf_counter()
+    timing_run = time.strftime("%Y-%m-%dT%H:%M:%S")
 
     for company_code, company in (
         BRSR_MANIFEST.items()
     ):
+
+        company_start = time.perf_counter()
 
         try:
 
@@ -1522,6 +1554,18 @@ def main():
                 str(exc)
             )
 
+        company_seconds = time.perf_counter() - company_start
+        write_timing(
+            timing_run,
+            company_code,
+            company["company_name"],
+            company_seconds,
+        )
+        print(f"Execution time: {company_seconds:.2f} sec")
+
+    overall_seconds = time.perf_counter() - overall_start
+    write_timing("OVERALL", "ALL", "All companies", overall_seconds)
+
     # ========================================================
     # SUMMARY
     # ========================================================
@@ -1568,6 +1612,18 @@ def main():
 
     print(
         AUDIT_LOG
+    )
+
+    print(
+        "Timing log:"
+    )
+
+    print(
+        TIMING_LOG
+    )
+
+    print(
+        f"Overall execution time: {overall_seconds:.2f} sec"
     )
 
     print("=" * 70)
