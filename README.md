@@ -1,6 +1,6 @@
 # Explainable Multi-Agent ESG Risk Analysis System — Phase 3
 
-Phase 3 extends the V1 seven-agent ESG pipeline from 5 companies to a fixed cohort of **20 Indian technology companies** while preserving the original V1 raw datasets and multi-agent architecture.
+Phase 3 extends the V1 seven-agent ESG pipeline from 5 companies to a configured cohort of **50 Indian companies** while preserving the original V1 raw datasets and multi-agent architecture.
 
 ## Phase 3 rules
 
@@ -11,11 +11,11 @@ Phase 3 extends the V1 seven-agent ESG pipeline from 5 companies to a fixed coho
 5. A valid canonical PDF is never overwritten or duplicated.
 6. A replacement is activated only after PDF, company, BRSR-content and FY validation all pass.
 7. The original V1 raw datasets remain unchanged.
-8. Agent 1 creates review placeholders when a company has no validated PDF, so the 20-company cohort remains visible in downstream outputs.
+8. Agent 1 creates review placeholders when a company has no validated PDF, so the 50-company cohort remains visible in downstream outputs.
 
-## Cohort
+## Configured cohort: 50 companies
 
-TCS, Infosys, Wipro, HCL Technologies, Tech Mahindra, LTIMindtree, Mphasis, Persistent Systems, Coforge, L&T Technology Services, Tata Elxsi, Oracle Financial Services Software, KPIT Technologies, Cyient, Birlasoft, Zensar Technologies, Tata Technologies, Happiest Minds Technologies, Sonata Software, and Hexaware Technologies.
+Tata Consultancy Services, Infosys, Wipro, HCL Technologies, Tech Mahindra, LTIMindtree, Mphasis, Persistent Systems, Coforge, L&T Technology Services, Tata Elxsi, Oracle Financial Services Software, KPIT Technologies, Cyient, Birlasoft, Zensar Technologies, Tata Technologies, Happiest Minds Technologies, Sonata Software, Hexaware Technologies, Mindtree (legacy symbol), Newgen Software Technologies, Tanla Platforms, Intellect Design Arena, Route Mobile, RateGain Travel Technologies, eClerx Services, Datamatics Global Services, Mastek, Sona BLW Precision Forgings, Hinduja Global Solutions, NIIT, E2E Networks, Affle India, MPS, Subex, Security and Intelligence Services, Eternal (formerly Zomato), One 97 Communications, PB Fintech, Delhivery, Nazara Technologies, Tata Communications, Indus Towers, Bharti Airtel, Tejas Networks, Redington, HCL Infosystems, Mazagon Dock Shipbuilders, and Titan Company.
 
 ## Important Hexaware note
 
@@ -78,7 +78,7 @@ For a rerun using existing BRSR files:
 v3demo.bat --skip-download
 ```
 
-### 1. Check the 20-company configuration
+### 1. Check the 50-company configuration
 
 ```bat
 python utils/config.py
@@ -87,7 +87,7 @@ python utils/config.py
 Expected company count:
 
 ```text
-Companies: 20
+Companies: 50
 ```
 
 ### 2. Download/validate BRSR reports
