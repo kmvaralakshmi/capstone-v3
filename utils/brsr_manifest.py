@@ -6,7 +6,7 @@ Target:
     FY 2024-25
 
 Company set:
-    20 IT-sector companies
+    50 target companies
 
 Source priority:
     1. NSE
@@ -19,8 +19,11 @@ Rules:
     - Failed sources move to the next source.
     - Mphasis has an official standalone BRSR fallback.
     - LTIMindtree has its verified NSE Annual Report fallback.
-    - Hexaware remains in the 20-company target set.
+    - Hexaware remains in the 50-company target set.
 """
+
+import csv
+from pathlib import Path
 
 BRSR_MANIFEST = {
 
@@ -556,3 +559,21 @@ BRSR_MANIFEST = {
         ]
     },
 }
+
+
+_target_file = Path(__file__).resolve().parent.parent / "config" / "target_companies_50.csv"
+with _target_file.open("r", encoding="utf-8-sig", newline="") as file:
+    for row in csv.DictReader(file):
+        code = row["company_code"].strip()
+        if code in BRSR_MANIFEST:
+            continue
+        company_name = row["company_name"].strip()
+        BRSR_MANIFEST[code] = {
+            "company_name": company_name,
+            "aliases": [company_name.lower(), row["search_alias"].strip().lower(), code.lower()],
+            "financial_year": "2024-25",
+            "sources": [],
+        }
+
+if len(BRSR_MANIFEST) != 50:
+    raise ValueError(f"Expected 50 BRSR manifest entries, found {len(BRSR_MANIFEST)}")
