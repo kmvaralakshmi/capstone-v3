@@ -1,0 +1,21 @@
+Company_Code,Company_Name,BRSR_Total_Metrics,BRSR_Extracted_Metrics,BRSR_Completeness_Pct,Missing_Extraction_Failed_Count,Missing_Not_Disclosed_Count,Missing_Not_Available_Sources,Review_Flag_Count,BRSR_Records_Used_For_Scoring,Sentiment_Records_Used,Environmental_Records_Used,Stock_Records_Used,Quality_Score,Quality_Gate_Status,Analysis_Date
+TCS,Tata Consultancy Services,18,11,61.11,7,7,0,9,9,22,7,13,5.17,Pass,2026-09-03
+INFY,Infosys,18,8,44.44,10,10,0,11,7,23,7,13,3.61,Low-Quality Warning,2026-09-03
+WIPRO,Wipro,18,9,50.0,9,9,0,9,9,20,8,13,4.5,Low-Quality Warning,2026-09-03
+HCLTECH,HCL Technologies,18,7,38.89,11,11,0,11,7,18,8,13,3.28,Low-Quality Warning,2026-09-03
+TECHM,Tech Mahindra,18,8,44.44,10,10,0,10,8,13,8,13,3.89,Low-Quality Warning,2026-09-03
+LTIM,LTIMindtree,18,7,38.89,11,11,1,11,7,18,1,0,2.48,Low-Quality Warning,2026-09-03
+MPHASIS,Mphasis,18,4,22.22,14,14,1,15,3,7,1,0,0.37,Low-Quality Warning,2026-09-03
+PERSISTENT,Persistent Systems,18,11,61.11,7,7,1,7,11,8,1,0,4.92,Low-Quality Warning,2026-09-03
+COFORGE,Coforge,18,9,50.0,9,9,1,10,8,10,1,0,3.42,Low-Quality Warning,2026-09-03
+LTTS,L&T Technology Services,18,7,38.89,11,11,1,12,6,1,1,0,2.2,Low-Quality Warning,2026-09-03
+TATAELXSI,Tata Elxsi,18,8,44.44,10,10,1,11,7,8,1,0,2.81,Low-Quality Warning,2026-09-03
+OFSS,Oracle Financial Services Software,18,11,61.11,7,7,1,9,9,4,1,0,4.37,Low-Quality Warning,2026-09-03
+KPITTECH,KPIT Technologies,18,6,33.33,12,12,1,12,6,4,1,0,1.87,Low-Quality Warning,2026-09-03
+CYIENT,Cyient,18,2,11.11,16,16,1,17,1,15,1,0,0.0,Low-Quality Warning,2026-09-03
+BSOFT,Birlasoft,18,12,66.67,6,6,1,7,11,14,1,0,5.26,Pass,2026-09-03
+ZENSARTECH,Zensar Technologies,18,11,61.11,7,7,1,7,11,5,1,0,4.92,Low-Quality Warning,2026-09-03
+TATATECH,Tata Technologies,18,8,44.44,10,10,1,10,8,12,1,0,3.09,Low-Quality Warning,2026-09-03
+HAPPSTMNDS,Happiest Minds Technologies,18,9,50.0,9,9,1,9,9,4,1,0,3.7,Low-Quality Warning,2026-09-03
+SONATSOFTW,Sonata Software,18,12,66.67,6,6,1,8,10,7,1,0,4.98,Low-Quality Warning,2026-09-03
+HEXAWARE,Hexaware Technologies,18,6,33.33,12,12,1,13,5,8,1,0,1.59,Low-Quality Warning,2026-09-03

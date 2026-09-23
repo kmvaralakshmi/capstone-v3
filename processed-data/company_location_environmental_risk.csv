@@ -1,0 +1,54 @@
+Company_Code,Company_Name,Location_Type,City,Area,Avg_AQI,Max_AQI,Min_AQI,Environmental_Risk_Score,Risk_Level,Data_Records,Analysis_Date
+TCS,Tata Consultancy Services,Headquarters,Mumbai,Fort,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Mumbai,Andheri East,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Bangalore,Electronic City,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Pune,Hinjewadi,,,,,,0,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Chennai,Sholinganallur,250.33876266082672,499.8,0.3,2.0,Very High,3653,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Hyderabad,Gachibowli,,,,,,0,2026-09-02
+TCS,Tata Consultancy Services,Major Office,Noida,Sector 62,,,,,,0,2026-09-02
+INFY,Infosys,Headquarters,Bangalore,Electronics City,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+INFY,Infosys,Major Office,Pune,Hinjewadi,,,,,,0,2026-09-02
+INFY,Infosys,Major Office,Chennai,Mahindra World City,250.33876266082672,499.8,0.3,2.0,Very High,3653,2026-09-02
+INFY,Infosys,Major Office,Hyderabad,HITEC City,,,,,,0,2026-09-02
+INFY,Infosys,Major Office,Mysore,Infosys Campus,,,,,,0,2026-09-02
+INFY,Infosys,Major Office,Mumbai,Powai,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+INFY,Infosys,Major Office,Noida,Sector 135,,,,,,0,2026-09-02
+WIPRO,Wipro,Headquarters,Bangalore,Sarjapur Road,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+WIPRO,Wipro,Major Office,Bangalore,Electronic City,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+WIPRO,Wipro,Major Office,Mumbai,Goregaon East,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+WIPRO,Wipro,Major Office,Pune,Hinjewadi,,,,,,0,2026-09-02
+WIPRO,Wipro,Major Office,Hyderabad,Madhapur,,,,,,0,2026-09-02
+WIPRO,Wipro,Major Office,Chennai,Sholinganallur,250.33876266082672,499.8,0.3,2.0,Very High,3653,2026-09-02
+WIPRO,Wipro,Major Office,Gurugram,Cyber City,,,,,,0,2026-09-02
+WIPRO,Wipro,Major Office,Kochi,Infopark,,,,,,0,2026-09-02
+HCLTECH,HCL Technologies,Headquarters,Noida,Sector 3,,,,,,0,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Noida,Sector 126,,,,,,0,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Bangalore,Nagawara,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Chennai,Siruseri IT Park,250.33876266082672,499.8,0.3,2.0,Very High,3653,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Pune,Kharadi,,,,,,0,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Hyderabad,Madhapur,,,,,,0,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Mumbai,Andheri,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+HCLTECH,HCL Technologies,Major Office,Gurugram,Udyog Vihar,,,,,,0,2026-09-02
+TECHM,Tech Mahindra,Headquarters,Pune,Shivajinagar,,,,,,0,2026-09-02
+TECHM,Tech Mahindra,Major Office,Pune,Talawade,,,,,,0,2026-09-02
+TECHM,Tech Mahindra,Major Office,Bangalore,Whitefield,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+TECHM,Tech Mahindra,Major Office,Hyderabad,HITEC City,,,,,,0,2026-09-02
+TECHM,Tech Mahindra,Major Office,Chennai,Sholinganallur,250.33876266082672,499.8,0.3,2.0,Very High,3653,2026-09-02
+TECHM,Tech Mahindra,Major Office,Mumbai,Mahape,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+TECHM,Tech Mahindra,Major Office,Gurugram,Sector 74,,,,,,0,2026-09-02
+TECHM,Tech Mahindra,Major Office,Chandigarh,IT Park,,,,,,0,2026-09-02
+LTIM,LTIMindtree,Headquarters,Mumbai,Powai,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+MPHASIS,Mphasis,Headquarters,Bangalore,Kadubeesanahalli,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+PERSISTENT,Persistent Systems,Headquarters,Pune,Hinjewadi,,,,,,0,2026-09-02
+COFORGE,Coforge,Headquarters,Noida,Sector 62,,,,,,0,2026-09-02
+LTTS,L&T Technology Services,Headquarters,Mumbai,Powai,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+TATAELXSI,Tata Elxsi,Headquarters,Bangalore,Electronics City,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+OFSS,Oracle Financial Services Software,Headquarters,Mumbai,Goregaon East,253.3190528332877,500.0,0.0,2.0,Very High,3653,2026-09-02
+KPITTECH,KPIT Technologies,Headquarters,Pune,Hinjewadi,,,,,,0,2026-09-02
+CYIENT,Cyient,Headquarters,Hyderabad,Madhapur,,,,,,0,2026-09-02
+BSOFT,Birlasoft,Headquarters,Noida,Sector 62,,,,,,0,2026-09-02
+ZENSARTECH,Zensar Technologies,Headquarters,Pune,Kharadi,,,,,,0,2026-09-02
+TATATECH,Tata Technologies,Headquarters,Pune,Hinjewadi,,,,,,0,2026-09-02
+HAPPSTMNDS,Happiest Minds Technologies,Headquarters,Bangalore,Bengaluru,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+SONATSOFTW,Sonata Software,Headquarters,Bangalore,Ulsoor,249.76739666027925,499.9,0.1,2.0,Very High,3653,2026-09-02
+HEXAWARE,Hexaware Technologies,Headquarters,Navi Mumbai,Ghansoli,,,,,,0,2026-09-02

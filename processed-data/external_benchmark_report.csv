@@ -1,0 +1,21 @@
+Company_Code,Company_Name,Benchmark_Market_Proxy,Benchmark_Reputation_Proxy,Benchmark_Disclosure_Proxy,External_Benchmark_Score,Benchmark_Method,Analysis_Date,Project_Rank,Benchmark_Rank,Rank_Deviation,Rank_Alignment_Status,Rank_Spearman_Correlation
+TCS,Tata Consultancy Services,6.0,10.0,6.111,7.233,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,2,1,1,Aligned,0.662
+INFY,Infosys,6.308,10.0,4.444,6.856,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,4,3,1,Aligned,0.662
+WIPRO,Wipro,6.385,10.0,5.0,7.054,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,5,2,3,Deviation-Review,0.662
+HCLTECH,HCL Technologies,6.462,10.0,3.889,6.751,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,6,5,1,Aligned,0.662
+TECHM,Tech Mahindra,6.231,10.0,4.444,6.826,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,3,4,1,Aligned,0.662
+LTIM,LTIMindtree,,9.444,3.889,4.0,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,12,16,4,Deviation-Review,0.662
+MPHASIS,Mphasis,,10.0,2.222,3.667,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,11,19,8,Deviation-Review,0.662
+PERSISTENT,Persistent Systems,,10.0,6.111,4.833,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,13,8,5,Deviation-Review,0.662
+COFORGE,Coforge,,10.0,5.0,4.5,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,14,12,2,Deviation-Review,0.662
+LTTS,L&T Technology Services,,10.0,3.889,4.167,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,10,14,4,Deviation-Review,0.662
+TATAELXSI,Tata Elxsi,,10.0,4.444,4.333,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,8,13,5,Deviation-Review,0.662
+OFSS,Oracle Financial Services Software,,10.0,6.111,4.833,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,9,9,0,Aligned,0.662
+KPITTECH,KPIT Technologies,,10.0,3.333,4.0,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,15,18,3,Deviation-Review,0.662
+CYIENT,Cyient,,10.0,1.111,3.333,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,16,20,4,Deviation-Review,0.662
+BSOFT,Birlasoft,,10.0,6.667,5.0,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,17,6,11,Deviation-Review,0.662
+ZENSARTECH,Zensar Technologies,,10.0,6.111,4.833,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,18,10,8,Deviation-Review,0.662
+TATATECH,Tata Technologies,,9.167,4.444,4.083,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,19,15,4,Deviation-Review,0.662
+HAPPSTMNDS,Happiest Minds Technologies,,10.0,5.0,4.5,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,7,11,4,Deviation-Review,0.662
+SONATSOFTW,Sonata Software,,10.0,6.667,5.0,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,1,7,6,Deviation-Review,0.662
+HEXAWARE,Hexaware Technologies,,10.0,3.333,4.0,0.4*Market + 0.3*Reputation + 0.3*Disclosure,2026-09-03,20,17,3,Deviation-Review,0.662

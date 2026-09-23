@@ -1,0 +1,21 @@
+Company_Code,Rule_ID,Severity,Description,Evidence,Analysis_Date
+TCS,CV-001,High,High renewable claim but low environmental score,"renewable=79.0%, env_score=2.00",2026-09-03
+INFY,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+WIPRO,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+HCLTECH,CV-001,Medium,Moderately high renewable claim with weak environmental score,"renewable=50.0%, env_score=2.00",2026-09-03
+TECHM,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+LTIM,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+MPHASIS,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+PERSISTENT,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+COFORGE,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+LTTS,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+TATAELXSI,CV-001,Medium,Moderately high renewable claim with weak environmental score,"renewable=51.1%, env_score=2.00",2026-09-03
+OFSS,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+KPITTECH,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+CYIENT,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+BSOFT,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+ZENSARTECH,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+TATATECH,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+HAPPSTMNDS,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+SONATSOFTW,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
+HEXAWARE,NONE,None,No contradiction detected,Cross-validation checks passed for available data,2026-09-03
