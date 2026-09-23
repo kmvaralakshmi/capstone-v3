@@ -1,9 +1,10 @@
 """Central configuration for the Phase 3 explainable multi-agent ESG system.
 
-The Phase 3 cohort is fixed at 20 technology companies. Raw V1 datasets are
-retained; BRSR PDFs are the primary company-level ESG source for FY 2024-25.
+The Phase 3 cohort is loaded from the 50-company target list. Raw V1 datasets
+are retained; BRSR PDFs are the primary company-level ESG source for FY 2024-25.
 """
 
+import csv
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +15,7 @@ PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
 BRSR_PDF_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_FINANCIAL_YEAR = "2024-25"
-TARGET_COMPANY_COUNT = 20
+TARGET_COMPANY_COUNT = 50
 
 # For the first five V1 companies, the original V1 office locations are kept.
 # For the 15 Phase 3 additions, only a representative headquarters location is
@@ -163,6 +164,34 @@ COMPANIES = {
         "major_offices": [],
     }
 }
+
+
+def _load_target_companies() -> dict:
+    """Merge the target list with detailed metadata for configured companies."""
+    target_file = BASE_DIR / "config" / "target_companies_50.csv"
+    companies = dict(COMPANIES)
+
+    with target_file.open("r", encoding="utf-8-sig", newline="") as file:
+        for row in csv.DictReader(file):
+            code = row["company_code"].strip()
+            existing = companies.get(code, {})
+            city = row["headquarters_city"].strip()
+            companies[code] = {
+                "full_name": row["company_name"].strip(),
+                "ticker": row["ticker"].strip(),
+                "brsr_file": f"{code}_BR_24-25.pdf",
+                "headquarters": existing.get("headquarters", {"city": city, "area": city}),
+                "major_offices": existing.get("major_offices", []),
+            }
+
+    if len(companies) != TARGET_COMPANY_COUNT:
+        raise ValueError(
+            f"Expected {TARGET_COMPANY_COUNT} target companies, found {len(companies)}"
+        )
+    return companies
+
+
+COMPANIES = _load_target_companies()
 
 # ============================================================
 # ESG METRICS TO EXTRACT FROM BRSR
