@@ -77,6 +77,9 @@ CONNECT_TIMEOUT = 20
 
 READ_TIMEOUT = 60
 
+NSE_BRSR_URL = "https://www.nseindia.com/api/corporate-bussiness-sustainabilitiy"
+NSE_BRSR_REFERER = "https://www.nseindia.com/companies-listing/corporate-filings-bussiness-sustainabilitiy-reports"
+
 CHUNK_SIZE = 1024 * 1024
 
 MAX_FILE_SIZE = 100 * 1024 * 1024
@@ -1025,6 +1028,39 @@ def canonical_path(
     )
 
 
+def resolve_auto_source(company_code: str, company: dict) -> Optional[str]:
+    """Resolve a FY2024-25 BRSR attachment from NSE's official filing API."""
+    params = {
+        "symbol": company.get("ticker", f"{company_code}.NS").removesuffix(".NS"),
+        "from_date": "01-04-2025",
+        "to_date": "31-03-2026",
+    }
+    headers = {
+        **HEADERS,
+        "Accept": "application/json",
+        "Referer": NSE_BRSR_REFERER,
+    }
+    try:
+        response = requests.get(
+            NSE_BRSR_URL,
+            params=params,
+            headers=headers,
+            timeout=(CONNECT_TIMEOUT, READ_TIMEOUT),
+        )
+        response.raise_for_status()
+        records = response.json().get("data", [])
+    except (requests.RequestException, ValueError, TypeError) as exc:
+        print(f"NSE AUTO discovery failed: {exc}")
+        return None
+
+    for record in records:
+        url = record.get("attachmentFile")
+        if url and record.get("fyFrom") == 2024 and record.get("fyTo") == 2025:
+            print(f"NSE AUTO discovered: {url}")
+            return url
+    return None
+
+
 # ============================================================
 # PROCESS COMPANY
 # ============================================================
@@ -1173,6 +1209,9 @@ def process_company(
         url = source.get(
             "url"
         )
+
+        if url == "AUTO":
+            url = resolve_auto_source(company_code, company)
 
         if not url:
 

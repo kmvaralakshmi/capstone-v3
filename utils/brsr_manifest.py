@@ -572,7 +572,14 @@ with _target_file.open("r", encoding="utf-8-sig", newline="") as file:
             "company_name": company_name,
             "aliases": [company_name.lower(), row["search_alias"].strip().lower(), code.lower()],
             "financial_year": "2024-25",
-            "sources": [],
+            "ticker": row["ticker"].strip(),
+            "sources": [
+                {
+                    "priority": 1,
+                    "name": "NSE BRSR",
+                    "url": "AUTO",
+                }
+            ],
         }
 
 if len(BRSR_MANIFEST) != 50:
